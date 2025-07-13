@@ -118,7 +118,7 @@ def main():
     with gr.Blocks() as demo:
         gr.Markdown("## WD14 Batch Tagger")
         model_dropdown = gr.Dropdown(list(MODELS.keys()), value="wd-swinv2-tagger-v3", label="Model")
-        image_input = gr.File(file_types=[".png", ".jpg", ".jpeg"], label="Images", multiple=True)
+        image_input = gr.File(file_types=[".png", ".jpg", ".jpeg"], label="Images", file_count="multiple")
         output = gr.Textbox(label="Tags")
         run_btn = gr.Button("Tag Images")
         run_btn.click(fn=process_images, inputs=[image_input, model_dropdown], outputs=output)
