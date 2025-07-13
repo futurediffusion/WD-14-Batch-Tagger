@@ -20,6 +20,10 @@ Once it's done install the **requirements.txt**:
 
     pip install -r requirements.txt
 
+Alternatively you can simply double-click **run.bat**. It will create
+a `.venv` folder if needed, install the required packages and launch the
+Gradio interface.
+
 You can dowload the [Models](https://huggingface.co/SmilingWolf) and the [selected_tags.csv](https://huggingface.co/SmilingWolf/wd-v1-4-swinv2-tagger-v2/resolve/main/selected_tags.csv) and put both on the './Models' folder. If you download the models but don't put them in the folder, specify the path (instructions below) otherwise the script will download the missing resources
 
 ## Usage
