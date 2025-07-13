@@ -3,3 +3,7 @@ onnxruntime-gpu==1.12.0
 opencv-python
 pandas
 pillow==9.0.0
+gradio
+tqdm
+requests
+torch
