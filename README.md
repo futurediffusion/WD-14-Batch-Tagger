@@ -20,6 +20,10 @@ Once it's done install the **requirements.txt**:
 
     pip install -r requirements.txt
 
+The requirements now use the CPU-only build of `onnxruntime`, which avoids
+black screens when launching the Gradio interface on machines without CUDA
+support.
+
 Alternatively you can simply double-click **run.bat**. It will create
 a `.venv` folder if needed, install the required packages and launch the
 Gradio interface.
